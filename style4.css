@@ -1,0 +1,259 @@
+body {
+    background-color: #e0f7fa; /* Light cyan background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.main-heading {
+    font-size: 3em;
+    font-weight: bold;
+    color: #008b8b; /* Dark cyan/teal */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+    font-family: 'Lobster', cursive;
+}
+
+.section-heading {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #00a896; /* A brighter teal */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.fees-section, .organizer-section, .player-info-section, .venue-details-section, .rules-section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 2px solid #b2ebf2; /* Light cyan border */
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.fees-section:hover, .organizer-section:hover, .player-info-section:hover, .venue-details-section:hover, .rules-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.fee-info, .advance-info, .player-info-text, .reach-out {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.amount {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d68400; /* A golden color */
+}
+
+.organizer-card {
+    padding: 20px;
+    background-color: rgba(0, 150, 136, 0.05); /* Very light teal */
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #b2ebf2;
+}
+
+.organizer-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.organizer-contact, .organizer-email {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.organizer-detail {
+    font-weight: bold;
+    color: #00a896;
+}
+
+
+.venue-details-section {
+    text-align: center;
+}
+
+.venue-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a5235; /* A dark green */
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #8b0000; /* Dark red/maroon */
+    margin-bottom: 10px;
+    animation: pulse 2s infinite alternate;
+}
+
+.event-time {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #8b0000; /* Dark red/maroon */
+    animation: pulse 2s infinite alternate;
+}
+
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.06); }
+}
+
+
+.venue-label, .date-label, .time-label {
+    font-weight: bolder;
+    color: #008b8b;
+    margin-right: 5px;
+}
+
+.special-date, .special-time{
+    font-size: 1.6em;
+    color: #e65100;
+}
+
+
+.rules-section {
+    text-align: left;
+}
+
+.rules-list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.rule-item {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.rule-number {
+    font-weight: bold;
+    color: #008b8b;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rule-text {
+    font-weight: bolder;
+    color: #4a148c;
+}
+
+
+.back-button {
+    background-color: #ff6f61; /* A coral color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.back-button:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        width: 95%;
+    }
+
+    .main-heading {
+        font-size: 2.5em;
+    }
+
+    .section-heading {
+        font-size: 1.8em;
+    }
+
+    .fee-info, .advance-info, .player-info-text, .reach-out, .rule-item {
+        font-size: 1.1em;
+    }
+
+    .organizer-card {
+        padding: 15px;
+    }
+
+    .organizer-name {
+        font-size: 1.2em;
+    }
+
+    .organizer-contact, .organizer-email {
+        font-size: 1em;
+    }
+
+    .venue-name, .event-date, .event-time {
+        font-size: 1.2em;
+    }
+
+    .back-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .container{
+        padding: 20px;
+    }
+    .main-heading{
+        font-size: 2em;
+    }
+    .section-heading{
+        font-size: 1.6em;
+    }
+    .fee-info, .advance-info, .player-info-text, .reach-out, .rule-item{
+        font-size: 1em;
+    }
+    .venue-name, .event-date, .event-time{
+        font-size: 1em;
+    }
+}

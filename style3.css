@@ -1,0 +1,159 @@
+body {
+    background-image: url('../Cric/images/trophe.jpeg'); /* Add the background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for better text readability */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.prize-section, .individual-prizes {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.7); /* Semi-transparent light gray */
+}
+
+.section-heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.winner {
+    color: #28a745;
+}
+
+.runner-up {
+    color: #dc3545;
+}
+
+.individual {
+    color: #ffc107;
+}
+
+.prize-label {
+    font-weight: bold;
+    color: #555;
+    margin-right: 10px;
+}
+
+.prize-amount {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.trophy-medals {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.trophy {
+    margin-right: 15px;
+}
+
+.medal {
+    margin-left: 15px;
+}
+
+.individual-prizes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.individual-prizes li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.award {
+    font-weight: bold;
+    color: #555;
+    margin-right: 10px;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .main-heading {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    .section-heading {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .prize-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .trophy-medals {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trophy, .medal {
+        margin: 5px 0;
+    }
+
+    .individual-prizes li {
+        font-size: 1em;
+    }
+
+    .back-button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}

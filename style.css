@@ -1,0 +1,106 @@
+body {
+    background-image: url('../Cric/images/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    min-height: 100vh;
+    color: white;
+    text-align: center; /* Center text within elements */
+}
+
+header {
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 150px; /* Adjusted logo size for better centering */
+    height: auto;
+    animation: logoAnimation 5s infinite alternate; /* Example animation */
+}
+
+@keyframes logoAnimation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); } /* Reduced animation distance */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Add some padding around the main content */
+}
+
+.heading-main {
+    font-size: 2.5em; /* Slightly adjusted font size for responsiveness */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heading-sub {
+    font-size: 1.8em; /* Slightly adjusted font size for responsiveness */
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    width: 80%; /* Adjust width as needed */
+    position: relative; /* Changed from absolute to relative for better flow */
+    bottom: auto; /* Removed bottom positioning */
+    margin-top: 30px; /* Added margin to separate from headings */
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line on smaller screens */
+}
+
+.styled-button {
+    background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent blue */
+    color: white;
+    padding: 12px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 1em; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-basis: calc(20% - 10px); /* Distribute buttons evenly, considering gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 10px; /* Space between rows of buttons if they wrap */
+}
+
+.styled-button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Solid blue on hover */
+}
+
+/* Media query for smaller screens (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center stacked buttons */
+        width: 90%;
+    }
+
+    .styled-button {
+        width: 100%; /* Make buttons full width on smaller screens */
+        flex-basis: auto; /* Reset flex-basis */
+        margin-bottom: 15px;
+    }
+
+    .heading-main {
+        font-size: 2em;
+    }
+
+    .heading-sub {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
