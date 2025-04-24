@@ -1,159 +1,203 @@
 body {
-    background-image: url('./images/trophe.jpeg'); /* Add the background image URL */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
-    padding: 20px;
-    box-sizing: border-box;
+    color: #fff;
+    background-color: #0d1117; /* Dark, modern background */
+    line-height: 1.7;
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for better text readability */
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 700px;
+.prizes-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #161b22; /* Slightly lighter dark */
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
-.main-heading {
-    font-size: 2.8em;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+.prizes-header {
+    margin-bottom: 80px;
 }
 
-.prize-section, .individual-prizes {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: rgba(249, 249, 249, 0.7); /* Semi-transparent light gray */
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    color: #fdd835; /* Vibrant gold */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between text and trophy */
 }
 
-.section-heading {
-    font-size: 2em;
-    font-weight: bold;
+.main-trophy {
+    font-size: 1.2em; /* Adjust size of main trophy */
+}
+
+.sub-title {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #eee;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.prize-reveal {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.prize-card {
+    background-color: #1e272e; /* Darker card */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
+    flex: 1;
+    max-width: 400px;
+}
+
+.card-icon {
+    font-size: 3em;
+    color: #fdd835;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.card-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
     margin-bottom: 15px;
 }
 
-.winner {
-    color: #28a745;
-}
-
-.runner-up {
-    color: #dc3545;
-}
-
-.individual {
-    color: #ffc107;
-}
-
-.prize-label {
-    font-weight: bold;
-    color: #555;
-    margin-right: 10px;
-}
-
-.prize-amount {
-    font-size: 1.2em;
-    color: #007bff;
-}
-
-.trophy-medals {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #666;
-}
-
-.trophy {
-    margin-right: 15px;
-}
-
-.medal {
-    margin-left: 15px;
-}
-
-.individual-prizes ul {
-    list-style: none;
-    padding: 0;
-}
-
-.individual-prizes li {
+.prize-money {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #fdd835;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #666;
 }
 
-.award {
-    font-weight: bold;
-    color: #555;
-    margin-right: 10px;
+.currency {
+    font-size: 0.8em;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.prize-details {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.trophy-name, .medal-name {
+    font-style: italic;
+    color: #eee;
+}
+
+.trophy-icon {
+    font-size: 0.8em; /* Adjust size of inline trophies */
+    color: #fdd835; /* Ensure they have the gold color */
+    vertical-align: middle; /* Align with text */
+}
+
+.individual-awards {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: #fdd835;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 20px;
+}
+
+.award-card {
+    background-color: #1e272e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.award-card i {
+    font-size: 2.5em;
+    color: #fdd835;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.award-card h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.award-trophy {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.award-trophy i {
+    margin-right: 8px;
+    color: #fdd835;
 }
 
 .back-button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 25px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fdd835;
+    color: #0d1117;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 6px 12px rgba(253, 216, 53, 0.7);
 }
 
 .back-button:hover {
-    background-color: #0056b3;
+    background-color: #ffeb3b;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(253, 216, 53, 0.8);
 }
 
-/* Mobile Responsive Adjustments */
-@media (max-width: 600px) {
-    .container {
-        padding: 30px;
-        border-radius: 10px;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3em;
+        gap: 10px;
     }
-
-    .main-heading {
-        font-size: 2.2em;
-        margin-bottom: 20px;
-    }
-
-    .section-heading {
-        font-size: 1.8em;
-        margin-bottom: 10px;
-    }
-
-    .prize-label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .trophy-medals {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .trophy, .medal {
-        margin: 5px 0;
-    }
-
-    .individual-prizes li {
+    .main-trophy {
         font-size: 1em;
     }
+    .trophy-icon {
+        font-size: 0.7em;
+    }
+}
 
-    .back-button {
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.6em;
+    }
+    .main-trophy {
         font-size: 0.9em;
-        padding: 10px 20px;
+    }
+    .trophy-icon {
+        font-size: 0.6em;
     }
 }

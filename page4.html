@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Registration Form & Rules</title>
+    <title>Register Your Team!</title>
     <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="form-header">
-            <h1 class="main-heading">The Elite 8 Tournament</h1>
+    <div class="registration-page-container">
+        <header class="form-header animate__animated animate__fadeInDown">
+            <h1 class="main-heading"><i class="fas fa-file-alt"></i> The Elite 8 Tournament</h1>
             <h2 class="sub-heading">Shanthinagar Team Presents</h2>
             <p class="venue-date-time">
-                <strong>Venue:</strong> Yellow Field, Shanthinagar | <strong>Date:</strong> 11/5/2025 | <strong>Time:</strong> 9:30 AM Onward
+                <i class="fas fa-map-marker-alt"></i> <strong>Venue:</strong> Yellow Field, Shanthinagar | <i class="far fa-calendar-alt"></i> <strong>Date:</strong> 11/05/2025 | <i class="far fa-clock"></i> <strong>Time:</strong> 9:30 AM Onward
             </p>
         </header>
 
-        <section class="form-image-section">
-            <h2 class="section-heading">Registration Form</h2>
-            <img src="./images/form1.png" alt="Registration Form" class="registration-form-image">
-        </section>
-
-        <section class="rules-image-section">
-            <h2 class="section-heading">Tournament Rules & Signatures</h2>
-            <img src="./images/form2.png" alt="Tournament Rules and Signatures" class="rules-form-image">
-        </section>
-
-        <section class="download-section">
-            <h2 class="section-heading">Download Forms</h2>
-            <div class="download-buttons">
-                <a href="./images/form1.png" download="registration_form.jpg" class="download-image-button">Download Registration Form</a>
-                <a href="./images/form2.png" download="tournament_rules.jpg" class="download-image-button">Download Rules & Signatures</a>
+        <section class="form-image-section animate__animated animate__fadeInLeft animate__delay-0-5s">
+            <h2 class="section-heading"><i class="far fa-clipboard"></i> Registration Form</h2>
+            <div class="image-container">
+                <img src="./images/form1.png" alt="Registration Form" class="registration-form-image">
+                <p class="image-caption">Click to download and print the registration form.</p>
             </div>
         </section>
 
-        <button class="back-button" onclick="location.href='index.html'">Back to Home</button>
+        <section class="rules-image-section animate__animated animate__fadeInRight animate__delay-0-7s">
+            <h2 class="section-heading"><i class="fas fa-list-ol"></i> Tournament Rules & Signatures</h2>
+            <div class="image-container">
+                <img src="./images/form2.png" alt="Tournament Rules and Signatures" class="rules-form-image">
+                <p class="image-caption">Review the rules and signature requirements before the tournament.</p>
+            </div>
+        </section>
+
+        <section class="download-section animate__animated animate__fadeInUp animate__delay-0-9s">
+            <h2 class="section-heading"><i class="fas fa-download"></i> Download Forms</h2>
+            <div class="download-buttons">
+                <a href="./images/form1.png" download="registration_form.jpg" class="download-button primary-button"><i class="fas fa-file-download"></i> Download Registration Form</a>
+                <a href="./images/form2.png" download="tournament_rules.jpg" class="download-button secondary-button"><i class="fas fa-file-download"></i> Download Rules & Signatures</a>
+            </div>
+        </section>
+
+        <button class="back-button animate__animated animate__fadeIn animate__delay-1-1s" onclick="location.href='index.html'"><i class="fas fa-arrow-left"></i> Back to Home</button>
     </div>
 </body>
 </html>

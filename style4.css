@@ -1,259 +1,318 @@
 body {
-    background-color: #e0f7fa; /* Light cyan background */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
-    padding: 20px;
-    box-sizing: border-box;
+    color: #fff;
+    background-color: #1c1c1c; /* Dark, modern background */
+    line-height: 1.7;
+    overflow-x: hidden;
+    padding-top: 60px;
 }
 
-.container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 800px;
+.registration-container {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #2c2c2c; /* Slightly lighter dark */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.registration-header {
     text-align: center;
-    animation: fadeIn 1s ease;
+    margin-bottom: 50px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.main-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #00bcd4; /* Cyan accent */
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.main-heading {
-    font-size: 3em;
-    font-weight: bold;
-    color: #008b8b; /* Dark cyan/teal */
+.main-title i {
+    font-size: 1.2em;
+}
+
+.sub-title {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #eee;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.section-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.6em;
+    font-weight: 600;
+    color: #00bcd4;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
-    font-family: 'Lobster', cursive;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.section-heading {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #00a896; /* A brighter teal */
-    margin-bottom: 20px;
-    font-family: 'Dancing Script', cursive;
+.section-title i {
+    font-size: 1em;
 }
 
 .fees-section, .organizer-section, .player-info-section, .venue-details-section, .rules-section {
-    margin-bottom: 30px;
-    padding: 25px;
-    border: 2px solid #b2ebf2; /* Light cyan border */
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.fees-section:hover, .organizer-section:hover, .player-info-section:hover, .venue-details-section:hover, .rules-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-
-.fee-info, .advance-info, .player-info-text, .reach-out {
+.fee-item {
     font-size: 1.2em;
-    line-height: 1.7;
-    color: #555;
+    color: #ddd;
     margin-bottom: 15px;
-    text-align: left;
 }
 
-.amount {
-    font-size: 1.3em;
+.fee-label {
     font-weight: bold;
-    color: #d68400; /* A golden color */
+    margin-right: 10px;
+    color: #00bcd4;
+}
+
+.fee-amount {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.per-team, .advance-note {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-left: 5px;
 }
 
 .organizer-card {
+    background-color: #444;
     padding: 20px;
-    background-color: rgba(0, 150, 136, 0.05); /* Very light teal */
-    border-radius: 10px;
-    margin-top: 15px;
-    border: 1px solid #b2ebf2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .organizer-name {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #008080;
-    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
 }
 
-.organizer-contact, .organizer-email {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
+.organizer-name i {
+    margin-right: 8px;
+    color: #00bcd4;
 }
 
 .organizer-detail {
+    font-weight: normal;
+    color: #ddd;
+}
+
+.organizer-contact {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.organizer-contact i {
+    margin-right: 8px;
+    color: #00bcd4;
+}
+
+.reach-out {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.reach-out i {
+    margin-right: 8px;
+    color: #00bcd4;
+}
+
+.player-info-text {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.venue-info {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.venue-info i {
+    color: #00bcd4;
+    font-size: 1.1em;
+}
+
+.venue-label {
     font-weight: bold;
-    color: #00a896;
+    color: #00bcd4;
+    min-width: 80px;
 }
 
-
-.venue-details-section {
-    text-align: center;
+.venue-detail {
+    color: #fff;
 }
 
-.venue-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #1a5235; /* A dark green */
-    margin-bottom: 10px;
+.special-date {
+    color: #ffc107; /* Yellow for emphasis */
 }
 
-.event-date {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #8b0000; /* Dark red/maroon */
-    margin-bottom: 10px;
-    animation: pulse 2s infinite alternate;
-}
-
-.event-time {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #8b0000; /* Dark red/maroon */
-    animation: pulse 2s infinite alternate;
-}
-
-
-@keyframes pulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.06); }
-}
-
-
-.venue-label, .date-label, .time-label {
-    font-weight: bolder;
-    color: #008b8b;
-    margin-right: 5px;
-}
-
-.special-date, .special-time{
-    font-size: 1.6em;
-    color: #e65100;
-}
-
-
-.rules-section {
-    text-align: left;
+.special-time {
+    color: #ffc107; /* Yellow for emphasis */
 }
 
 .rules-list {
     list-style-type: none;
-    padding: 0;
-    margin-left: 20px;
+    padding-left: 0;
 }
 
 .rule-item {
-    font-size: 1.2em;
-    line-height: 1.7;
-    color: #555;
+    font-size: 1.15em;
+    color: #ddd;
     margin-bottom: 15px;
+    padding-left: 25px;
     position: relative;
-    padding-left: 30px;
 }
 
 .rule-number {
-    font-weight: bold;
-    color: #008b8b;
-    margin-right: 10px;
     position: absolute;
     left: 0;
     top: 0;
+    font-weight: bold;
+    color: #00bcd4;
+    margin-right: 10px;
 }
-
-.rule-text {
-    font-weight: bolder;
-    color: #4a148c;
-}
-
 
 .back-button {
-    background-color: #ff6f61; /* A coral color */
-    color: white;
+    display: inline-block;
     padding: 15px 30px;
+    background-color: #00bcd4;
+    color: #1c1c1c;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    margin-top: 30px;
-    align-self: center;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.6);
+}
+
+.back-button i {
+    margin-right: 8px;
 }
 
 .back-button:hover {
-    background-color: #e53935;
+    background-color: #00e0ff;
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 188, 212, 0.7);
 }
 
-
-/* Mobile Responsive Adjustments */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .container {
-        padding: 30px;
-        width: 95%;
+    .registration-container {
+        margin: 40px auto;
+        padding: 40px;
     }
 
-    .main-heading {
-        font-size: 2.5em;
+    .main-title {
+        font-size: 3em;
+        gap: 10px;
     }
 
-    .section-heading {
-        font-size: 1.8em;
+    .sub-title {
+        font-size: 1.4em;
     }
 
-    .fee-info, .advance-info, .player-info-text, .reach-out, .rule-item {
+    .section-title {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+        gap: 8px;
+    }
+
+    .fees-section, .organizer-section, .player-info-section, .venue-details-section, .rules-section {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .fee-item {
         font-size: 1.1em;
     }
 
     .organizer-card {
         padding: 15px;
+        margin-bottom: 15px;
     }
 
     .organizer-name {
         font-size: 1.2em;
     }
 
-    .organizer-contact, .organizer-email {
+    .organizer-contact {
         font-size: 1em;
     }
 
-    .venue-name, .event-date, .event-time {
-        font-size: 1.2em;
+    .venue-info {
+        font-size: 1.1em;
+        gap: 8px;
+    }
+
+    .venue-label {
+        min-width: 70px;
+    }
+
+    .rule-item {
+        font-size: 1.1em;
+        padding-left: 20px;
     }
 
     .back-button {
+        width: 100%;
         font-size: 1em;
-        padding: 12px 25px;
     }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
-    .container{
-        padding: 20px;
+    .main-title {
+        font-size: 2.6em;
     }
-    .main-heading{
+
+    .sub-title {
+        font-size: 1.2em;
+    }
+
+    .section-title {
         font-size: 2em;
     }
-    .section-heading{
-        font-size: 1.6em;
-    }
-    .fee-info, .advance-info, .player-info-text, .reach-out, .rule-item{
+
+    .fee-item {
         font-size: 1em;
     }
-    .venue-name, .event-date, .event-time{
+
+    .organizer-name {
+        font-size: 1.1em;
+    }
+
+    .venue-info {
+        font-size: 1em;
+    }
+
+    .rule-item {
         font-size: 1em;
     }
 }

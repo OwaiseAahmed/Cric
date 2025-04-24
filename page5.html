@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button 5 - Payment & Organizers</title>
+    <title>Secure Your Spot!</title>
     <link rel="stylesheet" href="style6.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="page-header">
-            <h1 class="main-heading">Payment Information</h1>
+    <div class="payment-page-container">
+        <header class="page-header animate__animated animate__fadeInDown">
+            <h1 class="main-heading"><i class="fas fa-money-bill-wave"></i> Payment Information</h1>
             <p class="sub-heading">Secure your spot in the Elite 8 Tournament!</p>
         </header>
 
-        <section class="payment-section">
-            <h2 class="section-heading">Payment Options</h2>
+        <section class="payment-section animate__animated animate__fadeInLeft animate__delay-0-5s">
+            <h2 class="section-heading"><i class="fas fa-qrcode"></i> Payment Options</h2>
             <p class="payment-info">
                 You can pay the advance entry fee or the full entry fee using the QR codes below.
                 After making the payment, please share the receipt with the organizers on the provided WhatsApp number.
@@ -24,36 +26,79 @@
             <div class="qr-code-container">
                 <div class="qr-code-item">
                     <h3>Advance Entry Fee (₹1000/-)</h3>
-                    <img src="./images/sus-qr.png" alt="QR Code for Advance Payment" class="qr-code-image">
+                    <img src="./images/sus-qr.png" alt="QR Code for Advance Payment" class="qr-code-image" data-qr-src="./images/sus-qr.png">
+                    <button class="view-qr-button" data-qr-src="./images/sus-qr.png" data-qr-alt="QR Code for Advance Payment">View QR</button>
                 </div>
                 <div class="qr-code-item">
                     <h3>Full Entry Fee (₹3500/-)</h3>
-                    <img src="./images/rahul-qr.jpg" alt="QR Code for Full Payment" class="qr-code-image">
+                    <img src="./images/rahul-qr.jpg" alt="QR Code for Full Payment" class="qr-code-image" data-qr-src="./images/rahul-qr.jpg">
+                    <button class="view-qr-button" data-qr-src="./images/rahul-qr.jpg" data-qr-alt="QR Code for Full Payment">View QR</button>
                 </div>
             </div>
         </section>
 
-        <section class="organizer-section">
-            <h2 class="section-heading">Organizer Details</h2>
+        <section class="organizer-section animate__animated animate__fadeInRight animate__delay-0-7s">
+            <h2 class="section-heading"><i class="fas fa-address-book"></i> Organizer Details</h2>
             <p class="organizer-info">Reach out to the organizers for any assistance or queries:</p>
             <div class="organizer-list">
                 <div class="organizer-item">
-                    <h3>[Rahul]</h3>
-                    <img src="./images/rahul-qr.jpg" alt="QR Code - [Rahul]" class="qr-code-image small-qr">
-                    <p>Contact: 9739856982 <a href="tel: 9739856982">Rahul</a></p>
+                    <h3><i class="fas fa-user"></i> Rahul</h3>
+                    <img src="./images/rahul-qr.jpg" alt="QR Code - Rahul" class="qr-code-image small-qr" data-qr-src="./images/rahul-qr.jpg">
+                    <button class="view-qr-button small-qr-button" data-qr-src="./images/rahul-qr.jpg" data-qr-alt="QR Code for Rahul">View QR</button>
+                    <p><i class="fas fa-phone"></i> Contact: <a href="tel:9739856982">9739856982</a></p>
                 </div>
                 <div class="organizer-item">
-                    <h3>[Sushil]</h3>
-                    <img src="./images/sus-qr.png" alt="QR Code - [Sushil]" class="qr-code-image small-qr">
-                    <p>Contact: 9606176995 <a href="tel: 9606176995">Sushil</a></p>
+                    <h3><i class="fas fa-user"></i> Sushil</h3>
+                    <img src="./images/sus-qr.png" alt="QR Code - Sushil" class="qr-code-image small-qr" data-qr-src="./images/sus-qr.png">
+                    <button class="view-qr-button small-qr-button" data-qr-src="./images/sus-qr.png" data-qr-alt="QR Code for Sushil">View QR</button>
+                    <p><i class="fas fa-phone"></i> Contact: <a href="tel:9606176995">9606176995</a></p>
                 </div>
-                </div>
+            </div>
             <p class="query-contact">
-                For any queries, you can also WhatsApp us at: <a href="https://wa.me/9739856982">[Organizer Main WhatsApp Number]</a>
+                <i class="fab fa-whatsapp"></i> For any queries, you can also WhatsApp us at: <a href="https://wa.me/9739856982">Rahul & Sushil</a>
             </p>
         </section>
 
-        <button class="back-button" onclick="location.href='index.html'">Back to Home</button>
+        <button class="back-button animate__animated animate__fadeIn animate__delay-0-9s" onclick="location.href='index.html'"><i class="fas fa-arrow-left"></i> Back to Home</button>
+
+        <div id="qrModal" class="modal">
+            <span class="close-button">&times;</span>
+            <img class="modal-content" id="expandedQrImage">
+            <div id="qrCaption"></div>
+        </div>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("qrModal");
+
+        // Get the image and insert it inside the modal
+        var modalImg = document.getElementById("expandedQrImage");
+        var captionText = document.getElementById("qrCaption");
+        var qrImages = document.querySelectorAll(".qr-code-image, .view-qr-button");
+
+        qrImages.forEach(function(element) {
+            element.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = this.dataset.qrSrc;
+                captionText.innerHTML = this.alt || this.dataset.qrAlt;
+            });
+        });
+
+        // Get the close button
+        var closeButton = document.querySelector(".close-button");
+
+        // Close the modal
+        closeButton.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+
+        // Close the modal if the user clicks outside the image
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>

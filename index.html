@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shanthinagar Team - Elite 8 Tournament</title>
+    <title>The Elite 8 Tournament</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="./images/logo.jpg" alt="Animated Logo" class="logo">
-    </header>
-
-    <main>
-        <h1 class="heading-main">Shanthinagar Team Presents</h1>
-        <h2 class="heading-sub">The Elite 8 Tournament</h2>
-
-        <div class="button-container">
-            <button class="styled-button" onclick="location.href='page1.html'">Rules*</button>
-            <button class="styled-button" onclick="location.href='page2.html'">Prize-Pool</button>
-            <button class="styled-button" onclick="location.href='page3.html'">About Entry</button>
-            <button class="styled-button" onclick="location.href='page4.html'">Registration form</button>
-            <button class="styled-button" onclick="location.href='page5.html'">Payment</button>
+    <div class="hero-section">
+        <header>
+            <img src="./images/logo.jpg" alt="Elite 8 Tournament Logo" class="logo">
+        </header>
+        <div class="hero-content">
+            <h1 class="hero-title">The Elite 8 Tournament</h1>
+            <h2 class="hero-subtitle">Shanthinagar Team Presents</h2>
+            <div class="event-info">
+                <p><span class="info-label">Venue:</span> Yellow Field, Shanthinagar</p>
+                <p><span class="info-label">Date:</span> May 11, 2025</p>
+                <p><span class="info-label">Time:</span> 9:30 AM Onward</p>
+            </div>
+            <div class="action-buttons">
+                <button class="primary-button" data-link="page4.html">Register Now</button>
+                <button class="secondary-button" data-link="#">Learn More</button>
+            </div>
         </div>
-    </main>
+    </div>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Explore the Tournament</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-link="page1.html">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Rules & Regulations</h3>
+                    <p>Understand the guidelines for fair and exciting gameplay.</p>
+                </div>
+                <div class="feature-card" data-link="page2.html">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Prize Pool</h3>
+                    <p>Discover the exciting rewards awaiting the champions and top performers.</p>
+                </div>
+                <div class="feature-card" data-link="page3.html">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Entry Details</h3>
+                    <p>Find information about registration fees and important dates.</p>
+                </div>
+                <div class="feature-card" data-link="page5.html">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Payment Options</h3>
+                    <p>Secure your team's spot by exploring our convenient payment methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Shanthinagar Team. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.action-buttons button, .feature-card').forEach(button => {
+            button.addEventListener('click', function() {
+                const link = this.getAttribute('data-link');
+                if (link) {
+                    window.location.href = link;
+                } else {
+                    alert('Link not yet implemented!'); // For the "Learn More" button
+                }
+            });
+        });
+    </script>
 </body>
 </html>

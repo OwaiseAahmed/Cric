@@ -1,89 +1,189 @@
 body {
-    background-image: url('./images/aboutT.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Arial', sans-serif; /* A common and readable font */
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh;
-    color: white; /* Ensure text is readable on the background */
-    text-align: center; /* Center text within elements */
+    color: #fff;
+    background-color: #181818; /* Dark background */
+    line-height: 1.8;
+    overflow-x: hidden;
+    padding-top: 60px; /* Add some top padding for initial animation */
 }
 
-.container {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
-    padding: 30px;
-    border-radius: 10px;
-    width: 80%; /* Adjust as needed */
-    max-width: 600px; /* Limit maximum width on larger screens */
+.rules-container {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #212121;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
-.main-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif; /* A stylish serif font for the heading */
+.rules-header {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.points-container {
+.rules-header h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fdd835; /* Gold accent */
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.rules-header h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #eee;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.rules-list {
+    margin-bottom: 40px;
+}
+
+.rules-list h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.8em;
+    font-weight: 600;
     margin-bottom: 30px;
+    color: #fdd835;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
 }
 
-.point {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: left; /* Align points to the left for better readability */
+.rules-list ol {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.point-number {
-    font-weight: bold;
-    color: #007bff; /* A color to highlight the number */
-    margin-right: 10px;
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.point-text strong {
+.rule-number {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #fdd835;
+    margin-right: 20px;
+    min-width: 30px;
+    text-align: right;
+}
+
+.rule-item p {
+    font-size: 1.15em;
+    color: #ddd;
+    margin: 0;
+}
+
+.rule-emphasis {
     font-weight: bolder;
-    color: #ffc107; /* A color to highlight the bold text */
+    color: #fdd835;
+}
+
+.rule-link {
+    color: #fdd835;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.rule-link:hover {
+    color: #ffeb3b;
 }
 
 .back-button {
-    background-color: #28a745; /* A green color for the back button */
-    color: white;
-    padding: 12px 25px;
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    background-color: #fdd835;
+    color: #181818;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(253, 216, 53, 0.6);
 }
 
 .back-button:hover {
-    background-color: #1e7e34;
+    background-color: #ffeb3b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(253, 216, 53, 0.7);
 }
 
-/* Mobile Responsive Adjustments */
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
-        padding: 20px;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .rules-container {
+        margin: 30px auto;
+        padding: 30px;
     }
 
-    .main-heading {
-        font-size: 2em;
-        margin-bottom: 15px;
+    .rules-header h1 {
+        font-size: 2.8em;
     }
 
-    .point {
-        font-size: 1em;
+    .rules-header h2 {
+        font-size: 1.6em;
+    }
+
+    .rules-list h2 {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+    }
+
+    .rule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .rule-number {
+        font-size: 1.6em;
+        margin-right: 0;
         margin-bottom: 10px;
+        min-width: auto;
+        text-align: left;
+    }
+
+    .rule-item p {
+        font-size: 1.1em;
     }
 
     .back-button {
-        font-size: 0.9em;
-        padding: 10px 20px;
+        width: 100%;
+        margin-top: 30px;
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .rules-header h1 {
+        font-size: 2.4em;
+    }
+
+    .rules-header h2 {
+        font-size: 1.4em;
+    }
+
+    .rules-list h2 {
+        font-size: 2em;
+    }
+
+    .rule-item p {
+        font-size: 1em;
     }
 }

@@ -3,54 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prizes & Trophies</title>
+    <title>Prizes & Glory 🏆</title>
     <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1 class="main-heading">Prizes & Trophies</h1>
+    <div class="prizes-container">
+        <header class="prizes-header animate__animated animate__fadeInDown">
+            <h1 class="main-title">The Spoils of Victory 🏆 <i class="fas fa-trophy main-trophy"></i></h1>
+            <h2 class="sub-title">Elite 8 Tournament Rewards🏆</h2>
+        </header>
 
-        <section class="prize-section">
-            <h2 class="section-heading winner">Winners</h2>
-            <p>
-                <span class="prize-label">Prize Money:</span> <span class="prize-amount">₹ 15,000/-  +</span>
-            </p>
-            <div class="trophy-medals">
-                <span class="trophy">🏆 Champions Trophy</span>
-                <span class="medal">🥇 Gold Medals</span>
+        <section class="prize-reveal animate__animated animate__fadeInLeft animate__delay-0-5s">
+            <div class="prize-card winner-card">
+                <div class="card-icon"><i class="fas fa-trophy"></i></div>
+                <h3 class="card-title">🏆Champions🏆</h3>
+                <p class="prize-money"><span class="currency">₹</span> 15,000</p>
+                <p class="prize-details">+ <span class="trophy-name">Champions Trophy🏆</span> <i class="fas fa-trophy trophy-icon"></i> & <span class="medal-name">Gold Medals</span></p>
+            </div>
+
+            <div class="prize-card runner-up-card animate__animated animate__fadeInRight animate__delay-0-7s">
+                <div class="card-icon"><i class="fas fa-medal"></i></div>
+                <h3 class="card-title">Runners-Up🏆</h3>
+                <p class="prize-money"><span class="currency">₹</span> 7,500</p>
+                <p class="prize-details">+ <span class="trophy-name">Runners-Up Trophy🏆</span> <i class="fas fa-trophy trophy-icon"></i> & <span class="medal-name">Silver Medals</span></p>
             </div>
         </section>
 
-        <section class="prize-section">
-            <h2 class="section-heading runner-up">Runners-Up</h2>
-            <p>
-                <span class="prize-label">Prize Money:</span> <span class="prize-amount">₹ 7,500/-  +</span>
-            </p>
-            <div class="trophy-medals">
-                <span class="trophy">🥈 Runners-Up Trophy</span>
-                <span class="medal">🥈 Silver Medals</span>
+        <section class="individual-awards animate__animated animate__fadeInUp animate__delay-0-9s">
+            <h2 class="section-title">Individual Honors</h2>
+            <div class="award-card">
+                <i class="fas fa-user-crown"></i>
+                <h3>Player of the Tournament  -🏆</h3>
+                <p class="award-trophy"><i class="fas fa-award"></i> Player of the Tournament Trophy -🏆 <i class="fas fa-trophy trophy-icon"></i></p>
+            </div>
+            <div class="award-card">
+                <i class="fas fa-bowling-ball"></i>
+                <h3>Bowler of the Tournament -🏆</h3>
+                <p class="award-trophy"><i class="fas fa-award"></i> Bowler of the Tournament Trophy -🏆<i class="fas fa-trophy trophy-icon"></i></p>
+            </div>
+            <div class="award-card">
+                <i class="fas fa-baseball-bat"></i>
+                <h3>Batsman of the Tournament -🏆</h3>
+                <p class="award-trophy"><i class="fas fa-award"></i> Batsman of the Tournament Trophy -🏆<i class="fas fa-trophy trophy-icon"></i></p>
             </div>
         </section>
 
-        <section class="individual-prizes">
-            <h2 class="section-heading individual">Individual Awards</h2>
-            <ul>
-                <li>
-                    <span class="award">Player of the Tournament:</span>
-                    <span class="trophy">🏅 Player of the Tournament Trophy</span>
-                </li>
-                <li>
-                    <span class="award">Bowler of the Tournament:</span>
-                    <span class="trophy">🏏 Bowler of the Tournament Trophy</span>
-                </li>
-                <li>
-                    <span class="award">Batsman of the Tournament:</span>
-                    <span class="trophy">🏏 Batsman of the Tournament Trophy</span>
-                </li>
-            </ul>
-        </section>
-
-        <button class="back-button" onclick="location.href='index.html'">Back to Home</button>
+        <button class="back-button animate__animated animate__fadeIn animate__delay-1-2s" onclick="location.href='index.html'">Back to Home</button>
     </div>
 </body>
 </html>
