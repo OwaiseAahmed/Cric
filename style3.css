@@ -11,7 +11,7 @@ body {
 .prizes-container {
     max-width: 1000px;
     margin: 60px auto;
-    padding: 60px;
+    padding: 40px; /* Reduced padding for better mobile view */
     background-color: #161b22; /* Slightly lighter dark */
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
@@ -19,29 +19,29 @@ body {
 }
 
 .prizes-header {
-    margin-bottom: 80px;
+    margin-bottom: 60px; /* Adjusted margin */
 }
 
 .main-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4em;
+    font-size: 3.5em; /* Slightly reduced font size for better fit */
     font-weight: 500;
     color: #fdd835; /* Vibrant gold */
     letter-spacing: 1px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between text and trophy */
+    gap: 10px; /* Reduced gap */
 }
 
 .main-trophy {
-    font-size: 1.2em; /* Adjust size of main trophy */
+    font-size: 1em; /* Adjusted size of main trophy */
 }
 
 .sub-title {
-    font-size: 1.6em;
+    font-size: 1.4em; /* Slightly reduced font size */
     font-weight: 400;
     color: #eee;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -50,49 +50,52 @@ body {
 .prize-reveal {
     display: flex;
     justify-content: center;
-    gap: 60px;
-    margin-bottom: 80px;
+    gap: 30px; /* Reduced gap */
+    margin-bottom: 60px; /* Adjusted margin */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
 .prize-card {
     background-color: #1e272e; /* Darker card */
-    padding: 40px;
+    padding: 30px; /* Reduced padding */
     border-radius: 12px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
     flex: 1;
+    min-width: 300px; /* Minimum width for cards */
     max-width: 400px;
+    margin-bottom: 20px; /* Add margin between stacked cards */
 }
 
 .card-icon {
-    font-size: 3em;
+    font-size: 2.5em; /* Reduced icon size */
     color: #fdd835;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .card-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em; /* Reduced font size */
     font-weight: 500;
     color: #fff;
-    margin-bottom: 15px;
-}
-
-.prize-money {
-    font-size: 2.2em;
-    font-weight: 700;
-    color: #fdd835;
     margin-bottom: 10px;
 }
 
+.prize-money {
+    font-size: 1.8em; /* Reduced font size */
+    font-weight: 700;
+    color: #fdd835;
+    margin-bottom: 8px;
+}
+
 .currency {
-    font-size: 0.8em;
+    font-size: 0.7em;
     vertical-align: top;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .prize-details {
-    font-size: 1.1em;
+    font-size: 1em; /* Reduced font size */
     color: #ccc;
 }
 
@@ -102,69 +105,72 @@ body {
 }
 
 .trophy-icon {
-    font-size: 0.8em; /* Adjust size of inline trophies */
+    font-size: 0.7em; /* Adjusted size of inline trophies */
     color: #fdd835; /* Ensure they have the gold color */
     vertical-align: middle; /* Align with text */
+    margin-left: 5px; /* Add some spacing */
 }
 
 .individual-awards {
-    margin-bottom: 80px;
+    margin-bottom: 60px; /* Adjusted margin */
 }
 
 .section-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3em;
+    font-size: 2.2em; /* Reduced font size */
     font-weight: 500;
     color: #fdd835;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: 50px;
+    margin-bottom: 40px; /* Adjusted margin */
     border-bottom: 2px solid #2c3e50;
-    padding-bottom: 20px;
+    padding-bottom: 15px; /* Reduced padding */
 }
 
 .award-card {
     background-color: #1e272e;
-    padding: 30px;
+    padding: 20px; /* Reduced padding */
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .award-card i {
-    font-size: 2.5em;
+    font-size: 2em; /* Reduced icon size */
     color: #fdd835;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .award-card h3 {
-    font-size: 1.8em;
+    font-size: 1.5em; /* Reduced font size */
     font-weight: 600;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    text-align: center; /* Center text on smaller screens */
 }
 
 .award-trophy {
-    font-size: 1.1em;
+    font-size: 1em; /* Reduced font size */
     color: #ccc;
+    text-align: center; /* Center text on smaller screens */
 }
 
 .award-trophy i {
-    margin-right: 8px;
+    margin-right: 5px;
     color: #fdd835;
 }
 
 .back-button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 12px 25px; /* Reduced padding */
     background-color: #fdd835;
     color: #0d1117;
     border: none;
     border-radius: 8px;
-    font-size: 1.1em;
+    font-size: 1em; /* Reduced font size */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 0 6px 12px rgba(253, 216, 53, 0.7);
@@ -172,32 +178,112 @@ body {
 
 .back-button:hover {
     background-color: #ffeb3b;
-    transform: scale(1.05);
+    transform: scale(1.03); /* Slightly reduced scale */
     box-shadow: 0 8px 16px rgba(253, 216, 53, 0.8);
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .prizes-container {
+        margin: 30px auto;
+        padding: 20px; /* Further reduced padding */
+    }
+
     .main-title {
-        font-size: 3em;
-        gap: 10px;
+        font-size: 2.4em; /* Further reduced font size */
+        gap: 8px;
     }
-    .main-trophy {
-        font-size: 1em;
+
+    .sub-title {
+        font-size: 1.2em; /* Further reduced font size */
     }
-    .trophy-icon {
-        font-size: 0.7em;
+
+    .prize-reveal {
+        gap: 20px; /* Further reduced gap */
+        margin-bottom: 40px; /* Further reduced margin */
+    }
+
+    .prize-card {
+        padding: 20px; /* Further reduced padding */
+        min-width: auto; /* Allow cards to shrink more */
+    }
+
+    .card-icon {
+        font-size: 2em; /* Further reduced icon size */
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 1.8em; /* Further reduced font size */
+    }
+
+    .prize-money {
+        font-size: 1.6em; /* Further reduced font size */
+    }
+
+    .section-title {
+        font-size: 1.8em; /* Further reduced font size */
+        margin-bottom: 30px; /* Further reduced margin */
+        padding-bottom: 10px; /* Further reduced padding */
+    }
+
+    .award-card {
+        padding: 15px; /* Further reduced padding */
+        margin-bottom: 15px; /* Further reduced margin */
+    }
+
+    .award-card i {
+        font-size: 1.8em; /* Further reduced icon size */
+        margin-bottom: 8px;
+    }
+
+    .award-card h3 {
+        font-size: 1.3em; /* Further reduced font size */
+    }
+
+    .award-trophy {
+        font-size: 0.9em; /* Further reduced font size */
+    }
+
+    .back-button {
+        width: 100%;
+        font-size: 0.9em; /* Further reduced font size */
+        padding: 10px 20px; /* Further reduced padding */
     }
 }
 
 @media (max-width: 480px) {
     .main-title {
-        font-size: 2.6em;
+        font-size: 2em; /* Further reduced font size */
     }
-    .main-trophy {
-        font-size: 0.9em;
+
+    .sub-title {
+        font-size: 1em; /* Further reduced font size */
     }
-    .trophy-icon {
-        font-size: 0.6em;
+
+    .card-title {
+        font-size: 1.6em; /* Further reduced font size */
+    }
+
+    .prize-money {
+        font-size: 1.4em; /* Further reduced font size */
+    }
+
+    .section-title {
+        font-size: 1.6em; /* Further reduced font size */
+    }
+
+    .award-card h3 {
+        font-size: 1.2em; /* Further reduced font size */
+    }
+
+    .prize-reveal {
+        flex-direction: column; /* Stack prize cards on very small screens */
+        align-items: center; /* Center stacked cards */
+    }
+
+    .prize-card {
+        min-width: auto; /* Allow full width on very small screens */
+        max-width: 90%; /* Prevent cards from being too wide */
     }
 }
