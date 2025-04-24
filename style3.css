@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Cric/images/trophe.jpeg'); /* Add the background image URL */
+    background-image: url('./images/trophe.jpeg'); /* Add the background image URL */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
